@@ -23,8 +23,8 @@ A Bash script to manage and update `php.ini` configurations for all installed PH
 ## 🛠️ Installation
 
 Just download the script and make it executable:
-```bash
-`chmod +x da-php.sh`
+```bash```
+```chmod +x da-php.sh```
 
 ## 🚀 Usage
 
