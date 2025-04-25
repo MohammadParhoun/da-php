@@ -26,17 +26,21 @@ Just download the script and make it executable:
 ```bash
 chmod +x da-php.sh
 
-🚀 Usage
+## 🚀 Usage
 
 sudo ./da-php.sh
 ℹ️ Must be run as root!
 
-📂 Backup
+## 📂 Backup
+
 Before modifying any file, the script creates a backup:
 
 /usr/local/phpXX/lib/php.ini.bak
 If the backup file already exists, it increments:
 
 /usr/local/phpXX/lib/php.ini.bak.1, .2, ...
-📝 Changelog
+
+## 📝 Changelog
+
 v1.0 (2025-04-24): Initial release
+
