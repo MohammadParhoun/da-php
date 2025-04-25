@@ -24,7 +24,7 @@ A Bash script to manage and update `php.ini` configurations for all installed PH
 
 Just download the script and make it executable:
 ```bash
-chmod +x da-php.sh
+`chmod +x da-php.sh`
 
 ## 🚀 Usage
 
