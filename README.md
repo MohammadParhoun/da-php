@@ -29,6 +29,7 @@ Just download the script and make it executable:
 ## 🚀 Usage
 
 sudo ./da-php.sh
+
 ℹ️ Must be run as root!
 
 ## 📂 Backup
