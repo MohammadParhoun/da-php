@@ -13,15 +13,17 @@
 # ======================================================================================================
 
 
+GREEN="\e[32m"
+RED="\e[31m"
+YELLOW="\e[33m"
+RESET="\e[0m"
+
+
 if [[ "$EUID" -ne 0 ]]; then
     echo -e "${RED}Error: This script must be run as root.${RESET}" >&2
     exit 1
 fi
 
-GREEN="\e[32m"
-RED="\e[31m"
-YELLOW="\e[33m"
-RESET="\e[0m"
 
 # ------------ Execution & Input Limits ------------
 max_execution_time=400    # Max time (in seconds) a script can run. Prevents endless loops. Default: 30
