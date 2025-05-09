@@ -117,13 +117,8 @@ for php in ${php_versions[@]}; do
     fi
 
 
-    backup_file="$full_path.bak"
-    counter=1
+    backup_file="$full_path.bak-$(date +%F-%T)"
 
-    while [[ -f "$backup_file" ]]; do
-        backup_file="$full_path.bak.$counter"
-        ((counter++))
-    done
 
     if cp "$full_path" "$backup_file"; then
         echo -e "${YELLOW}Created backup: $backup_file ${RESET}"
