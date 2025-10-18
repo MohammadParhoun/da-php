@@ -3,12 +3,13 @@
 # Script Name: da-php.sh
 # Description: A script for updating php.ini settings across multiple PHP versions on DirectAdmin servers.
 # Author: Mohammad Parhoun <mohammad.parhoun.7@gmail.com>
-# Version: 1.0
+# Version: 1.1
 #
 # Copyright (c) 2025 Mohammad Parhoun. All Rights Reserved.
 # This script is licensed under the MIT License.
 #
 # Changelog:
+# v1.1 - 2025-10-18: Added automatic ionCube Loader installation with silent error handling.
 # v1.0 - 2025-04-24: Initial release.
 # ======================================================================================================
 
