@@ -161,6 +161,21 @@ done
 
 echo ""
 
+# ------------ Install ionCube Loader ------------
+echo -e "${YELLOW}Installing ionCube Loader for all PHP versions...${RESET}"
+
+if ! da build set_php "ioncube" yes >/dev/null 2>&1; then
+    echo -e "${RED}Failed to enable ionCube in CustomBuild configuration.${RESET}" >&2
+fi
+
+if da build "php_ioncube" >/dev/null 2>&1 ; then
+    echo -e "${GREEN}ionCube Loader compiled and installed successfully.${RESET}"
+else
+    echo -e "${RED}Error: Failed to build and install ionCube Loader.${RESET}" >&2
+fi
+
+echo ""
+
 restart_webserver
 
 exit 0
