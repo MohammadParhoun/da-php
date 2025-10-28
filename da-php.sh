@@ -155,6 +155,14 @@ for php in ${php_versions[@]}; do
             echo -e "${RED}Error: Failed to restart $php_fpm_service. ${RESET}" >&2
         fi
     fi
+    if [[ "$webserver" == "litespeed" || "$webserver" == "openlitespeed" ]]; then
+       if systemctl restart lsws; then
+            echo -e "${GREEN}Restarted lsphp successfully.${RESET}"
+        else
+            echo -e "${RED}Error: Failed to restart $webserver.${RESET}" >&2
+            return 1
+        fi
+    fi
 
     echo ""
 
